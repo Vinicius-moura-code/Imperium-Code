@@ -1,0 +1,135 @@
+*{
+  font-family: Helvetica;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+.container-fluid{
+  color: black;
+  width: 100%;
+  background: #eaeaea;
+  background: -moz-linear-gradient(left,  #eaeaea 0%, #b7b7b7 100%); 
+  background: -webkit-linear-gradient(left,  #eaeaea 0%,#b7b7b7 100%); 
+  background: linear-gradient(to right,  #eaeaea 0%,#b7b7b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#b7b7b7',GradientType=1 );
+  border: black 2px solid
+ 
+}
+
+#main{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f73361+0,544efc+100 */
+background: #f73361; /* Old browsers */
+background: -moz-linear-gradient(top,  #f73361 0%, #544efc 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f73361 0%,#544efc 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f73361 0%,#544efc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73361', endColorstr='#544efc',GradientType=0 ); /* IE6-9 */  
+height: 700px;
+text-align: center;
+position: relative;
+}
+#menu{
+ margin-top: 60%;
+ text-decoration: unset;
+ align-items: center;
+}
+.menuLink{
+ margin-top: 15%;
+ text-align: center;
+ width: 100%;
+}
+.menuLink a{
+  display: flex;
+  justify-content: center;
+  text-decoration: unset;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  border-radius: 20px;
+  padding: 2%;
+}
+.menuLink a:hover{
+  border-radius: 20px;
+  padding: 3%;
+  box-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;
+  background-color: #f73361;
+  text-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;;
+}
+
+
+
+#conteudo{
+border-left: rgb(255, 0, 212) 1px solid;
+}
+
+.container-conteudo{
+  margin-top: 10%;
+  text-align: center;
+}
+
+#foto{
+
+  margin-top: 20px;
+
+} 
+#foto img{
+  float: right;
+  margin-top: 10%;  
+  margin-right: 10%; 
+  border-radius: 50%;
+  border: black 1px solid;
+  width: 300px;
+}
+#foto img:hover{
+  float: right;
+  margin-top: 10%;  
+  margin-right: 10%; 
+  border-radius: 50%;
+  border: black 5px double;
+  width: 290px;
+}
+
+#hireMe{
+  margin-left: 40%;
+  width: 150px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  text-decoration: unset;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  border-radius: 25px;
+  padding: 1%;
+}
+.redes{
+  padding: 5px;
+  border-radius: 50px;
+  margin-top: 25%;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.562);
+}
+
+@media only screen and (max-width: 1069px) {
+ .redes{
+   display: none ;
+ }
+ #hireMe{
+  margin-left: 27%;
+  padding: 10px;
+  width: 200PX;
+ }
+ #foto{
+  margin-right: 8%; 
+}
+#menu{
+  margin-top: 5%;
+}
+}
