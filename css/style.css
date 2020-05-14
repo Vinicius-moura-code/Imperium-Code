@@ -14,6 +14,11 @@ body {
   color: black;
   width: 100%;
   background: #eaeaea;
+  background: -moz-linear-gradient(left,  #eaeaea 0%, #9b9b9b 100%); 
+  background: -webkit-linear-gradient(left,  #eaeaea 0%,#9b9b9b 100%); 
+  background: linear-gradient(to right,  #eaeaea 0%,#9b9b9b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#9b9b9b',GradientType=1 );
+  border: black 2px solid;
 }
 
 #main{
@@ -51,6 +56,7 @@ position: relative;
   border-radius: 20px;
   padding: 3%;
   box-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;
+  background-color: #ff003c67;
   text-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;;
 }
 
@@ -81,6 +87,7 @@ border-left: rgb(255, 0, 212) 1px solid;
   margin-top: 10%;  
   margin-right: 10%; 
   border-radius: 50%;
+  border: rgb(255, 255, 255) 5px double;
   width: 290px;
 }
 
@@ -96,14 +103,36 @@ border-left: rgb(255, 0, 212) 1px solid;
   text-shadow: rgb(0, 0, 0) 1px 1px;
   border-radius: 25px;
   padding: 1%;
+  border: white 2px solid ;
+  box-shadow:rgba(255, 255, 255, 0.562) 1px 1px 1px 1px ;
 }
+#hireMe:hover{
+  margin-left: 40%;
+  width: 155px;
+  height: 45px;
+  background-color: rgb(255, 0, 0);
+  display: flex;
+  justify-content: center;
+  text-decoration: unset;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  text-shadow: rgb(0, 0, 0) 1px 1px;
+  border-radius: 25px;
+  padding: 1%;
+  border:rgba(255, 255, 255, 0.856) 3px solid ;
+}
+
+
 .redes{
   padding: 5px;
   border-radius: 50px;
+  margin-top: 26%;
   width: 1100px;
   display: flex;
   justify-content: space-between;
   background-color: rgba(128, 128, 128, 0.562);
+  position: absolute;
+  z-index:4;
 }
 
 @media only screen and (max-width: 1069px) {
@@ -115,8 +144,24 @@ border-left: rgb(255, 0, 212) 1px solid;
   padding: 10px;
   width: 200PX;
  }
+ #foto {
+ display: flex;
+ float: inline-start;
+ width: 50%;
+ padding-left: 34%;
+}
+#foto img{
+  width: 150px;
+}
+#foto img:hover{
+  width: 160px;
 }
 #menu{
   margin-top: 5%;
+}
+#hireMe:hover{
+  padding: 2%;
+  margin: 0;
+  width: 100%;
 }
 }
