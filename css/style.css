@@ -14,12 +14,6 @@ body {
   color: black;
   width: 100%;
   background: #eaeaea;
-  background: -moz-linear-gradient(left,  #eaeaea 0%, #b7b7b7 100%); 
-  background: -webkit-linear-gradient(left,  #eaeaea 0%,#b7b7b7 100%); 
-  background: linear-gradient(to right,  #eaeaea 0%,#b7b7b7 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#b7b7b7',GradientType=1 );
-  border: black 2px solid
- 
 }
 
 #main{
@@ -57,7 +51,6 @@ position: relative;
   border-radius: 20px;
   padding: 3%;
   box-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;
-  background-color: #f73361;
   text-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;;
 }
 
@@ -73,9 +66,7 @@ border-left: rgb(255, 0, 212) 1px solid;
 }
 
 #foto{
-
   margin-top: 20px;
-
 } 
 #foto img{
   float: right;
@@ -90,7 +81,6 @@ border-left: rgb(255, 0, 212) 1px solid;
   margin-top: 10%;  
   margin-right: 10%; 
   border-radius: 50%;
-  border: black 5px double;
   width: 290px;
 }
 
@@ -110,7 +100,6 @@ border-left: rgb(255, 0, 212) 1px solid;
 .redes{
   padding: 5px;
   border-radius: 50px;
-  margin-top: 25%;
   width: 1100px;
   display: flex;
   justify-content: space-between;
@@ -126,8 +115,6 @@ border-left: rgb(255, 0, 212) 1px solid;
   padding: 10px;
   width: 200PX;
  }
- #foto{
-  margin-right: 8%; 
 }
 #menu{
   margin-top: 5%;
