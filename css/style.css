@@ -1,48 +1,65 @@
-*{
+* {
   font-family: Helvetica;
+  
+}
+hmtl,
+body {
+  height: 100vh;
 }
 body {
+  height: 100vh;
   background-color: rgb(0, 0, 0);
-  min-height: 100%;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
 }
-.container-fluid{
+.container-fluid {
   color: black;
   width: 100%;
+  height: 100vh;
   background: #eaeaea;
-  background: -moz-linear-gradient(left,  #eaeaea 0%, #9b9b9b 100%); 
-  background: -webkit-linear-gradient(left,  #eaeaea 0%,#9b9b9b 100%); 
-  background: linear-gradient(to right,  #eaeaea 0%,#9b9b9b 100%);
+  background: -moz-linear-gradient(left, #eaeaea 0%, #9b9b9b 100%);
+  background: -webkit-linear-gradient(left, #eaeaea 0%, #9b9b9b 100%);
+  background: linear-gradient(to right, #eaeaea 0%, #9b9b9b 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#9b9b9b',GradientType=1 );
-  border: black 2px solid;
 }
 
-#main{
-/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f73361+0,544efc+100 */
-background: #f73361; /* Old browsers */
-background: -moz-linear-gradient(top,  #f73361 0%, #544efc 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f73361 0%,#544efc 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f73361 0%,#544efc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73361', endColorstr='#544efc',GradientType=0 ); /* IE6-9 */  
-height: 700px;
-text-align: center;
-position: relative;
+#main {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f73361+0,544efc+100 */
+  background: #f73361; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #f73361 0%,
+    #544efc 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #f73361 0%,
+    #544efc 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #f73361 0%,
+    #544efc 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f73361', endColorstr='#544efc',GradientType=0 ); /* IE6-9 */
+  height: 100vh;
+  text-align: center;
+  position: relative;
 }
-#menu{
- margin-top: 60%;
- text-decoration: unset;
- align-items: center;
+#menu {
+  margin-top: 60%;
+  text-decoration: unset;
+  align-items: center;
 }
-.menuLink{
- margin-top: 15%;
- text-align: center;
- width: 100%;
+.menuLink {
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
 }
-.menuLink a{
+.menuLink a {
   display: flex;
   justify-content: center;
   text-decoration: unset;
@@ -52,46 +69,44 @@ position: relative;
   border-radius: 20px;
   padding: 2%;
 }
-.menuLink a:hover{
+.menuLink a:hover {
   border-radius: 20px;
   padding: 3%;
   box-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;
   background-color: #ff003c67;
-  text-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;;
+  text-shadow: rgb(255, 255, 255) -1px 0px 10px 0px;
 }
 
-
-
-#conteudo{
-border-left: rgb(255, 0, 212) 1px solid;
+#conteudo {
+  border-left: rgb(255, 0, 212) 1px solid;
 }
 
-.container-conteudo{
-  margin-top: 10%;
+.container-conteudo {
+  margin-top: 12%;
   text-align: center;
 }
 
-#foto{
+#foto {
   margin-top: 20px;
-} 
-#foto img{
+}
+#foto img {
   float: right;
-  margin-top: 10%;  
-  margin-right: 10%; 
+  margin-top: 10%;
+  margin-right: 10%;
   border-radius: 50%;
   border: black 1px solid;
-  width: 300px;
+  width: 100px;
 }
-#foto img:hover{
+#foto img:hover {
   float: right;
-  margin-top: 10%;  
-  margin-right: 10%; 
+  margin-top: 10%;
+  margin-right: 10%;
   border-radius: 50%;
   border: rgb(255, 255, 255) 5px double;
-  width: 290px;
+  width: 210px;
 }
 
-#hireMe{
+#hireMe {
   margin-left: 40%;
   width: 150px;
   background-color: blueviolet;
@@ -103,10 +118,10 @@ border-left: rgb(255, 0, 212) 1px solid;
   text-shadow: rgb(0, 0, 0) 1px 1px;
   border-radius: 25px;
   padding: 1%;
-  border: white 2px solid ;
-  box-shadow:rgba(255, 255, 255, 0.562) 1px 1px 1px 1px ;
+  border: white 2px solid;
+  box-shadow: rgba(255, 255, 255, 0.562) 1px 1px 1px 1px;
 }
-#hireMe:hover{
+#hireMe:hover {
   margin-left: 40%;
   width: 155px;
   height: 45px;
@@ -119,49 +134,48 @@ border-left: rgb(255, 0, 212) 1px solid;
   text-shadow: rgb(0, 0, 0) 1px 1px;
   border-radius: 25px;
   padding: 1%;
-  border:rgba(255, 255, 255, 0.856) 3px solid ;
+  border: rgba(255, 255, 255, 0.856) 3px solid;
 }
 
-
-.redes{
+.redes {
   padding: 5px;
   border-radius: 50px;
-  margin-top: 26%;
+  margin-top: 19%;
   width: 1100px;
   display: flex;
   justify-content: space-between;
   background-color: rgba(128, 128, 128, 0.562);
   position: absolute;
-  z-index:4;
+  z-index: 4;
 }
 
 @media only screen and (max-width: 1069px) {
- .redes{
-   display: none ;
- }
- #hireMe{
-  margin-left: 27%;
-  padding: 10px;
-  width: 200PX;
- }
- #foto {
- display: flex;
- float: inline-start;
- width: 50%;
- padding-left: 34%;
-}
-#foto img{
-  width: 150px;
-}
-#foto img:hover{
-  width: 160px;
-}
-#menu{
-  margin-top: 5%;
-}
-#hireMe:hover{
-  padding: 2%;
-  margin: 0;
-  width: 100%;
-}
+  .redes {
+    display: none;
+  }
+  #hireMe {
+    margin-left: 27%;
+    padding: 10px;
+    width: 200px;
+  }
+  #foto {
+    display: flex;
+    float: inline-start;
+    width: 50%;
+    padding-left: 34%;
+  }
+  #foto img {
+    width: 150px;
+  }
+  #foto img:hover {
+    width: 160px;
+  }
+  #menu {
+    margin-top: 5%;
+  }
+  #hireMe:hover {
+    padding: 2%;
+    margin: 0;
+    width: 100%;
+  }
 }
