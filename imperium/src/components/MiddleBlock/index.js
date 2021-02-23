@@ -16,7 +16,7 @@ const MiddleBlock = ({ id, title, content, button, t , isrc}) => {
         key={src}
         aria-label={src}
       >
-        <SvgIcon src={src} width="100px" height="100px" />
+        <SvgIcon src={src} width="150px" height="150px" />
       </a>
     );
   };
@@ -26,7 +26,7 @@ const MiddleBlock = ({ id, title, content, button, t , isrc}) => {
         
           <S.ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
-              <h6>{t(title)}</h6>
+              <h5>{t(title)}</h5>
               <SvgIcon src="gitflow.svg" width="220px" height="220px" />
               <S.Content>{t(content)}</S.Content>
               {button ? (
