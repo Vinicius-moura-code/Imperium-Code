@@ -62,7 +62,7 @@ const Footer = ({ t }) => {
                   >
                     <option value="en">English</option>
                     <option value="es">Español</option>
-                    <option value="pt-br">Português</option>
+                    <option value="pt">Português</option>
 
                   </S.LangSelect>
                 </S.Select>

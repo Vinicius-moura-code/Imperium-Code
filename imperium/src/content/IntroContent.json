@@ -1,9 +1,11 @@
 {
   "title": "Welcome to my website",
   "text": "Hi, I'm Vinicius Moura, but you can call me Vini.\n Feel free to get to know me better",
+  "href": "contact",
   "button": [
     {
-      "title": "Explore"
+      "title": "Explore",
+      "href":"about"
     },
     {
       "title": "Learn More",

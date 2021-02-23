@@ -1,5 +1,10 @@
 {
   "title": "Repositories",
-  "text": "",
-  "Repos": "https://github.com/Vinicius-moura-code"
+  "text": "Hi, I'm Vinicius Moura, but you can call me Vini.\n Feel free to get to know me better",
+  "button": [
+    {
+      "title": "Explore",
+      "href": "imperium-code.com.brs"
+    }
+  ]
 }

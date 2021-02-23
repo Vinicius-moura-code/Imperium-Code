@@ -1,41 +1,45 @@
 import { lazy } from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
-import Fade from "react-reveal/Fade";
 
 import * as S from "./styles";
 
-const Button = lazy(() => import("../../common/Button"));
+const SvgIcon = lazy(() => import("../../common/SvgIcon"));
 
-const MiddleBlock = ({ title, content, button, t }) => {
-  const scrollTo = (id) => {
-    const element = document.getElementById(id);
-    element.scrollIntoView({
-      behavior: "smooth",
-    });
+const MiddleBlock = ({ id, title, content, button, t , isrc}) => {
+  const SocialLink = ({ href, src }) => {
+    return (
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        key={src}
+        aria-label={src}
+      >
+        <SvgIcon src={src} width="100px" height="100px" />
+      </a>
+    );
   };
   return (
     <S.MiddleBlock>
-      <Row type="flex" justify="center" align="middle">
-        <Fade bottom>
+      <Row type="flex" justify="center" align="middle" id={id}>
+        
           <S.ContentWrapper>
             <Col lg={24} md={24} sm={24} xs={24}>
               <h6>{t(title)}</h6>
+              <SvgIcon src="gitflow.svg" width="220px" height="220px" />
               <S.Content>{t(content)}</S.Content>
               {button ? (
-                <Button
-                  name="submit"
-                  type="submit"
-                  onClick={() => scrollTo("mission")}
-                >
-                  {t(button)}
-                </Button>
+                <SocialLink
+                href="https://github.com/Vinicius-moura-code/Vinicius-moura-code"
+                src="github.svg"
+              />
               ) : (
                 ""
               )}
             </Col>
           </S.ContentWrapper>
-        </Fade>
+        
       </Row>
     </S.MiddleBlock>
   );
